@@ -1,0 +1,110 @@
+/* Reset básico e fontes */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #00ffff; /* Um ciano "edit" */
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* Caixa de Controles */
+.controles {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+fieldset {
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px 15px;
+    flex-basis: 200px; /* Base de largura */
+    flex-grow: 1; /* Cresce para preencher espaço */
+    text-align: left;
+}
+
+legend {
+    color: #00ffff;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Inputs e Sliders */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+input[type="file"] {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 95%;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Botão de Download */
+#downloadBtn {
+    background-color: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px #00ffff44;
+}
+
+#downloadBtn:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px #00ffff88;
+}
+
+/* O Canvas onde a imagem aparece */
+#canvas {
+    background-color: #1e1e1e;
+    border: 1px dashed #555;
+    border-radius: 8px;
+    max-width: 100%; /* Responsivo */
+    height: auto; /* Responsivo */
+}
