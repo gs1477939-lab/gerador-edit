@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Edits 100%</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerador de Edits ⚡</h1>
+        <p>Suba uma imagem, ajuste os filtros e adicione seu texto.</p>
+
+        <div class="controles">
+            <fieldset>
+                <legend>1. Imagem</legend>
+                <label for="imageLoader">Carregar Imagem:</label>
+                <input type="file" id="imageLoader" accept="image/*">
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Filtros (A "Vibe")</legend>
+                
+                <label for="brightness">Brilho:</label>
+                <input type="range" id="brightness" min="0" max="200" value="100">
+                
+                <label for="contrast">Contraste:</label>
+                <input type="range" id="contrast" min="0" max="200" value="100">
+                
+                <label for="saturate">Saturação:</label>
+                <input type="range" id="saturate" min="0" max="200" value="100">
+                
+                <label for="blur">Blur (Desfoque):</label>
+                <input type="range" id="blur" min="0" max="10" value="0">
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Texto da Edit</legend>
+                <label for="textOverlay">Seu Texto:</label>
+                <input type="text" id="textOverlay" placeholder="Digite algo...">
+                
+                <label for="fontSize">Tamanho:</label>
+                <input type="number" id="fontSize" value="50">
+            </fieldset>
+
+            <button id="downloadBtn">Baixar Edit Pronta</button>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
+                  
